@@ -1,0 +1,18 @@
+<!-- Ejercicio de autoevaluación punto 3: Agregar el código DTD al siguiente documento XML para que sea válido:
+ <?xml version="1.0"?>
+ <pelicula>
+    <titulo>Titanic</titulo>
+</pelicula> -->
+<?xml version="1.0">
+<!DOCTYPE pelicula [
+<!-- pelicula: debe ser la raiz del documento -->
+    <!ELEMENT pelicula (titulo)>
+    <!-- pelicula es el elemento padre, que contiene el hijo título -->
+    <!ELEMENT titulo (#PCDATA))>
+    <!-- titulo es el elemento terminal de contenido textual, al tener la palabra clave -entre paréntesis- -->
+    ]>
+    <!-- Se cierra el corchete del DTD -->
+    <pelicula>
+        <titulo>Titanic</titulo>
+    </pelicula>
+    
