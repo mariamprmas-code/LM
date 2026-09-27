@@ -15,4 +15,5 @@
     <pelicula>
         <titulo>Titanic</titulo>
     </pelicula>
-    
+    <!-- En el prólogo podemos añadir el encoding y la declaración de si fuese un DTD interno: (standalone="yes"), o si fuese un DTD externo, el fichero tendría la extensión .dtd ,aunque si este atributo no se pone XML lo dá por defecto: standalone="no". quedando la linea de elemento del prólogo como sigue: <?xml version="1.0" encoding="UTF-8" standalone="no", en este caso los corchetes perderían sentido, y comenzariamos con la declaración de un archivo 
+con la declaracion DTD: <!ELEMENT pelicula (titulo)> siguiendo una segunda linea: <!ELEMENT titulo (#PCDATA)> , quedando el documento XML con el siguiente contenido en el prólogo: <!xml version="1.0" encoding=UTF-8" ?> y otra linea: <!DOCTYPE pelicula SYSTEM "pelicul.dtd">, donde SISTEM es la instrución de la ruta donde esta el archivo pelicula.dtd --> 
